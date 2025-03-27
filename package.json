@@ -1,0 +1,14 @@
+{
+  "name": "mokytojo-suvestine",
+  "version": "1.0.0",
+  "main": "summary.js",
+  "scripts": {
+    "film": "node --watch film.js",
+    "summary": "node --watch summary.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
