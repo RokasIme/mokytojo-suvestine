@@ -65,7 +65,9 @@ function pasitaisyti(arr) {
     pazymiuSuma1 += arr[i];
   }
   let pazymiuVidurkis1 = (pazymiuSuma1 / (arr.length - 1)).toFixed(2);
-
+  if (pazymiuVidurkis1 > 4) {
+    return `${arr[0]} nereikia taisytis, jis jau išlaikė`;
+  }
   if (pazymiuVidurkis1 <= 4) {
     for (let i = 5; i < Infinity; i++) {
       if (pazymiuVidurkis1 <= 4) {
@@ -81,9 +83,6 @@ function pasitaisyti(arr) {
         return `${arr[0]} negali pasitaisyti vienu pažymiu, jam reiktų gauti: ${i}`;
       }
     }
-  }
-  if (pazymiuVidurkis1 > 4) {
-    return `${arr[0]} nereikia taisytis, jis jau išlaikė`;
   }
 }
 

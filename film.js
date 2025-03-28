@@ -15,7 +15,7 @@ const filmai = [
   { name: "Guliverio keliones", genre: "adventure", imdb: "vidutinis" },
   { name: "American pie", genre: "comedy", imdb: "geras" },
   { name: "Matrica", genre: "action", imdb: "blogas" },
-  { name: "Simpson movie", genre: "comedy", imdb: "vidurinis" },
+  { name: "Simpson movie", genre: "comedy", imdb: "vidutinis" },
   { name: "Rock", genre: "drama", imdb: "geras" },
 ];
 
