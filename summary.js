@@ -65,19 +65,19 @@ function pasitaisyti(arr) {
     pazymiuSuma1 += arr[i];
   }
   let pazymiuVidurkis1 = (pazymiuSuma1 / (arr.length - 1)).toFixed(2);
-  if (pazymiuVidurkis1 > 4) {
+  if (pazymiuVidurkis1 >= 4.5) {
     return `${arr[0]} nereikia taisytis, jis jau išlaikė`;
   }
-  if (pazymiuVidurkis1 <= 4) {
+  if (pazymiuVidurkis1 <= 4.5) {
     for (let i = 5; i < Infinity; i++) {
-      if (pazymiuVidurkis1 <= 4) {
+      if (pazymiuVidurkis1 < 4.5) {
         let pazymiuSuma2 = 0;
         arr.push(i);
         for (let i = 1; i < arr.length; i++) {
           pazymiuSuma2 += arr[i];
         }
         pazymiuVidurkis1 = (pazymiuSuma2 / (arr.length - 1)).toFixed(2);
-      } else if (i < 10) {
+      } else if (i <= 10) {
         return `${arr[0]} gali pasitaisyti jei gaus: ${i}`;
       } else {
         return `${arr[0]} negali pasitaisyti vienu pažymiu, jam reiktų gauti: ${i}`;
